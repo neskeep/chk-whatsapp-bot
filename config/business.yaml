@@ -1,0 +1,49 @@
+# Configuración del negocio — Generado por AgentKit
+negocio:
+  nombre: "CHK"
+  razon_social: "CHK GROUP INT LLC"
+  descripcion: >
+    Marca venezolana de moda masculina de lujo, fundada en 1984 con herencia libanesa.
+    Especializada en indumentaria sartorial, calzado artesanal y accesorios de piel de
+    alta calidad. Talleres propios en Hong Kong con tradición sartorial inglesa.
+    Materias primas de Europa, Reino Unido y Asia. Tres tiendas físicas en Venezuela
+    (Caracas, Puerto Ordaz, San Cristóbal) y tienda online con envíos nacionales e internacionales.
+  sitio_web: "https://www.chkoficial.com"
+  email: "info@chkoficial.com"
+  whatsapp: "+58 412 777 0393"
+  instagram: "@chkoficial"
+  facebook: "/oficialchk"
+  tiktok: "@chkoficial_"
+  horario: "Asesor humano disponible en horario comercial (por confirmar con CHK). El agente responde 24/7."
+
+agente:
+  nombre: "CHK Asistente"
+  tono: "Profesional, elegante y cálido. Tratamiento de usted por defecto."
+  casos_de_uso:
+    - "Atender consultas de clientes 24/7"
+    - "Responder preguntas frecuentes sobre productos, envíos, políticas y tiendas"
+    - "Calificar y pre-atender leads interesados"
+    - "Escalar a asesor humano cuando corresponde"
+
+tiendas:
+  caracas:
+    nombre: "Tienda Caracas"
+    direccion: "C.C. Parque Cerro Verde, Nivel Plaza, Local P-37, Subida Los Naranjos, Miranda"
+    telefono: "+58 212 626 3407"
+  puerto_ordaz:
+    nombre: "Tienda Puerto Ordaz"
+    direccion: "C.C. Orinokia Mall, Nivel PB, Local C-082, Sector Alta Vista Norte, Ciudad Guayana, Bolívar"
+    telefono: "+58 286 600 3036"
+  san_cristobal:
+    nombre: "Tienda San Cristóbal"
+    direccion: "C.C. Sambil San Cristóbal, Nivel Autopista, Local T-27, Sector Las Lomas, Táchira"
+    telefono: "+58 276 340 3438"
+
+metadata:
+  creado: "2026-04-17"
+  version: "1.0"
+  completitud: "70%"
+  notas: >
+    Información pendiente de confirmar con CHK: horarios de tiendas, métodos de pago,
+    costos de envío, guía de tallas, proceso exacto para agendar cita,
+    horario del equipo humano de WhatsApp.
