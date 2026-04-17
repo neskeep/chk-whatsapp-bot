@@ -24,7 +24,8 @@
       "Bash(grep -E \"\\\\.\\(py|yml|yaml|txt|env|dockerfile|cfg|conf|json|sh\\)$\")",
       "Bash(ssh *)",
       "Bash(brew install *)",
-      "Bash(sshpass *)"
+      "Bash(sshpass *)",
+      "Bash(gh auth *)"
     ]
   }
 }
