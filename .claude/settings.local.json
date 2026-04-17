@@ -20,7 +20,11 @@
       "Glob",
       "Grep",
       "Bash(python3.11 -m pip install -r /Users/carlos/Projects/chk-whatsapp-bot/requirements.txt -q)",
-      "Bash(python3.11 *)"
+      "Bash(python3.11 *)",
+      "Bash(grep -E \"\\\\.\\(py|yml|yaml|txt|env|dockerfile|cfg|conf|json|sh\\)$\")",
+      "Bash(ssh *)",
+      "Bash(brew install *)",
+      "Bash(sshpass *)"
     ]
   }
 }
