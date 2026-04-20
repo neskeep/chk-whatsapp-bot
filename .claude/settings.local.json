@@ -25,7 +25,8 @@
       "Bash(ssh *)",
       "Bash(brew install *)",
       "Bash(sshpass *)",
-      "Bash(gh auth *)"
+      "Bash(gh auth *)",
+      "Skill(claude-api)"
     ]
   }
 }

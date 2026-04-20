@@ -71,12 +71,20 @@ async def generar_respuesta(mensaje: str, historial: list[dict]) -> str:
         response = await client.messages.create(
             model="claude-sonnet-4-6",
             max_tokens=1024,
-            system=system_prompt,
+            system=[{
+                "type": "text",
+                "text": system_prompt,
+                "cache_control": {"type": "ephemeral"},
+            }],
             messages=mensajes
         )
 
-        respuesta = response.content[0].text
-        logger.info(f"Respuesta generada ({response.usage.input_tokens} in / {response.usage.output_tokens} out)")
+        uso = response.usage
+        cache_hit = getattr(uso, "cache_read_input_tokens", 0) or 0
+        logger.info(
+            f"Respuesta generada ({uso.input_tokens} in / {uso.output_tokens} out"
+            f"{f' / {cache_hit} cache_hit' if cache_hit else ''})"
+        )
         return respuesta
 
     except Exception as e:
