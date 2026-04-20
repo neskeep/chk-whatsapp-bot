@@ -79,6 +79,7 @@ async def generar_respuesta(mensaje: str, historial: list[dict]) -> str:
             messages=mensajes
         )
 
+        respuesta = response.content[0].text
         uso = response.usage
         cache_hit = getattr(uso, "cache_read_input_tokens", 0) or 0
         logger.info(
